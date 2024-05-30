@@ -36,7 +36,7 @@ from splunk_connect_for_snmp.common.hummanbool import human_bool
 SPLUNK_HEC_SCHEME = os.getenv("SPLUNK_HEC_SCHEME", "https")
 SPLUNK_HEC_HOST = os.getenv("SPLUNK_HEC_HOST", "127.0.0.1")
 SPLUNK_HEC_PORT = os.getenv("SPLUNK_HEC_PORT", None)
-SPLUNK_HEC_PATH = os.getenv("SPLUNK_HEC_PATH", "services/collector")
+SPLUNK_HEC_PATH = os.getenv("SPLUNK_HEC_PATH", "services/collector/raw")
 METRICS_INDEXING_ENABLED = human_bool(os.getenv("METRICS_INDEXING_ENABLED", "false"))
 
 url = {
